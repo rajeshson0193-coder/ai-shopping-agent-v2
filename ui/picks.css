@@ -1,0 +1,319 @@
+/* ShopBuddy picks — compact shortlist that fits one desktop viewport. */
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap");
+
+:root {
+  --background: oklch(0.982 0.008 85);
+  --foreground: oklch(0.24 0.012 250);
+  --card: oklch(0.995 0.004 85);
+  --primary: oklch(0.47 0.085 190);
+  --primary-foreground: oklch(0.985 0.006 85);
+  --muted-foreground: oklch(0.5 0.012 250);
+  --border: oklch(0.905 0.012 85);
+  --shadow-card: 0 1px 2px oklch(0.3 0.02 85 / 6%), 0 8px 24px -12px oklch(0.3 0.02 85 / 14%);
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fraunces", Georgia, serif;
+}
+
+.stApp,
+[data-testid="stAppViewContainer"] {
+  background: var(--background) !important;
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+[data-testid="stHeader"] {
+  background: transparent !important;
+}
+
+#MainMenu,
+footer,
+[data-testid="stStatusWidget"],
+div[data-testid="stDecoration"] {
+  display: none !important;
+}
+
+[data-testid="stMainBlockContainer"] {
+  max-width: 1280px !important;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.75rem !important;
+}
+
+[data-testid="stMainBlockContainer"] [data-testid="stVerticalBlock"] {
+  gap: 0.45rem !important;
+}
+
+.pk-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.35rem;
+}
+
+.pk-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pk-brand-mark {
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background: var(--primary);
+  color: var(--primary-foreground);
+  font-weight: 800;
+}
+
+.pk-brand-name {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.pk-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 2.4vw, 2.1rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--foreground);
+}
+
+.pk-sub {
+  margin: 0.15rem 0 0.35rem;
+  font-size: 0.88rem;
+  color: var(--muted-foreground);
+}
+
+.pk-sub strong {
+  color: var(--foreground);
+}
+
+.pk-overview {
+  margin: 0 0 0.35rem;
+  padding: 0.55rem 0.75rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--border);
+  background: var(--card);
+  font-size: 0.82rem;
+  line-height: 1.35;
+  color: var(--muted-foreground);
+}
+
+.pk-overview .pk-why {
+  margin: 0;
+}
+
+.pk-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0.85rem;
+  align-items: stretch;
+  margin: 0.25rem 0 0.5rem;
+}
+
+.pk-card {
+  height: 100%;
+  min-height: 0;
+  padding: 0.9rem 0.95rem 0.95rem;
+  border-radius: 1rem;
+  border: 1px solid var(--border);
+  background: var(--card);
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.pk-card-top {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  flex: 1 1 auto;
+}
+
+.pk-card-head {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.pk-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: auto;
+  padding: 0.55rem 0.85rem;
+  border-radius: 0.7rem;
+  background: oklch(0.42 0.1 195);
+  color: oklch(0.98 0.01 195);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  border: none;
+  box-shadow: 0 1px 0 oklch(0.35 0.08 195 / 35%);
+  transition: background 120ms ease, transform 120ms ease;
+}
+
+.pk-cta:hover {
+  background: oklch(0.36 0.1 195);
+  color: oklch(0.99 0.01 195);
+  text-decoration: none;
+}
+
+.pk-cta:focus-visible {
+  outline: 2px solid oklch(0.55 0.1 195);
+  outline-offset: 2px;
+}
+
+.pk-cta-disabled {
+  background: oklch(0.92 0.01 85);
+  color: var(--muted-foreground);
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.pk-evidence {
+  margin-top: 0.2rem;
+  border-radius: 0.55rem;
+  border: 1px solid var(--border);
+  padding: 0.2rem 0.55rem;
+  background: oklch(0.975 0.006 85);
+}
+
+.pk-evidence summary {
+  cursor: pointer;
+  font-size: 0.74rem;
+  font-weight: 650;
+  color: var(--foreground);
+  list-style: none;
+}
+
+.pk-evidence summary::-webkit-details-marker {
+  display: none;
+}
+
+.pk-evidence ul {
+  margin: 0.35rem 0 0.45rem;
+  padding-left: 1rem;
+  font-size: 0.72rem;
+  line-height: 1.35;
+  color: var(--muted-foreground);
+}
+
+.pk-evidence li {
+  margin: 0 0 0.2rem;
+}
+
+.pk-rank {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.6rem;
+  height: 1.6rem;
+  padding: 0 0.35rem;
+  border-radius: 999px;
+  background: var(--primary);
+  color: var(--primary-foreground);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.pk-model {
+  margin: 0;
+  font-size: 1.02rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--foreground);
+  letter-spacing: -0.02em;
+}
+
+.pk-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.12rem 0.45rem;
+  border-radius: 999px;
+  background: oklch(0.94 0.035 170);
+  color: oklch(0.38 0.08 175);
+  font-size: 0.68rem;
+  font-weight: 650;
+}
+
+.pk-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0.15rem 0;
+}
+
+.pk-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: oklch(0.97 0.01 85);
+  font-size: 0.72rem;
+  font-weight: 650;
+  color: var(--foreground);
+}
+
+.pk-chip.price {
+  background: oklch(0.94 0.035 170);
+  border-color: transparent;
+  color: oklch(0.35 0.07 175);
+}
+
+.pk-why {
+  margin: 0.15rem 0 0;
+  padding-left: 1.05rem;
+  font-size: 0.78rem;
+  line-height: 1.4;
+  color: var(--muted-foreground);
+  flex: 1 1 auto;
+}
+
+.pk-why li {
+  margin: 0 0 0.28rem;
+}
+
+.pk-why li:last-child {
+  margin-bottom: 0;
+}
+
+.pk-foot {
+  margin-top: 0.25rem;
+  font-size: 0.7rem;
+  color: var(--muted-foreground);
+}
+
+/* Scoring notes expander only */
+div[data-testid="stExpander"] {
+  border: 1px solid var(--border) !important;
+  border-radius: 0.65rem !important;
+  background: transparent !important;
+}
+
+div[data-testid="stExpander"] details summary p {
+  font-size: 0.78rem !important;
+}
+
+@media (max-width: 700px) {
+  .pk-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-height: 720px) {
+  .pk-overview {
+    display: none;
+  }
+}

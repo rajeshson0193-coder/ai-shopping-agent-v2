@@ -1,0 +1,1 @@
+"""ShopBuddy Streamlit pages."""

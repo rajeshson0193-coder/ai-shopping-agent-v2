@@ -1,0 +1,115 @@
+{
+  "description": "Deterministic headphones discovery fixtures for pipeline development, not a live market snapshot.",
+  "listings": [
+    {
+      "name": "Soundcore by Anker Q20i Hybrid Active Noise Cancelling Headphones, 40H Playtime, Wireless Over-Ear",
+      "product_url": "https://www.ebay.com/itm/fixture-soundcore-q20i",
+      "source": "ebay",
+      "listed_price": "39.99",
+      "currency": "USD",
+      "price_status": "verified",
+      "condition": "New",
+      "condition_status": "verified"
+    },
+    {
+      "name": "Sony WH-CH520 Wireless Bluetooth Headphones Black 50 Hour Battery",
+      "product_url": "https://www.bestbuy.com/site/fixture-sony-wh-ch520",
+      "source": "bestbuy",
+      "listed_price": "58.00",
+      "currency": "USD",
+      "price_status": "verified",
+      "condition": "New",
+      "condition_status": "verified"
+    },
+    {
+      "name": "JBL Vibe Beam 2 True Wireless Earbuds ANC Waterproof",
+      "product_url": "https://www.walmart.com/ip/fixture-jbl-vibe-beam-2",
+      "source": "serpapi",
+      "listed_price": "49.95",
+      "currency": "USD",
+      "price_status": "verified",
+      "condition": "New",
+      "condition_status": "verified"
+    },
+    {
+      "name": "JLab Studio 2 Wireless On-Ear Headphones 50+ Hour Battery",
+      "product_url": "https://www.ebay.com/itm/fixture-jlab-studio-2",
+      "source": "ebay",
+      "listed_price": "29.99",
+      "currency": "USD",
+      "price_status": "verified",
+      "condition": "New",
+      "condition_status": "verified"
+    },
+    {
+      "name": "Skullcandy SESH ANC True Wireless Earbuds Noise Cancelling",
+      "product_url": "https://www.target.com/p/fixture-skullcandy-sesh-anc",
+      "source": "serpapi",
+      "listed_price": "44.99",
+      "currency": "USD",
+      "price_status": "verified",
+      "condition": "New",
+      "condition_status": "verified"
+    },
+    {
+      "name": "Soundcore by Anker P30i Wireless Earbuds ANC 45H Playtime",
+      "product_url": "https://www.ebay.com/itm/fixture-soundcore-p30i",
+      "source": "ebay",
+      "listed_price": "39.99",
+      "currency": "USD",
+      "price_status": "verified",
+      "condition": "New",
+      "condition_status": "verified"
+    },
+    {
+      "name": "Sony WF-C700N Truly Wireless Noise Cancelling Earbuds Black",
+      "product_url": "https://www.bestbuy.com/site/fixture-sony-wf-c700n",
+      "source": "bestbuy",
+      "listed_price": "89.99",
+      "currency": "USD",
+      "price_status": "verified",
+      "condition": "New",
+      "condition_status": "verified"
+    },
+    {
+      "name": "Samsung Galaxy Buds FE True Wireless Earbuds Graphite",
+      "product_url": "https://www.walmart.com/ip/fixture-galaxy-buds-fe",
+      "source": "serpapi",
+      "listed_price": "79.00",
+      "currency": "USD",
+      "price_status": "verified",
+      "condition": "New",
+      "condition_status": "verified"
+    },
+    {
+      "name": "TREBLAB Z2 Wireless Over-Ear Headphones Bluetooth",
+      "product_url": "https://www.amazon.com/dp/fixture-treblab-z2",
+      "source": "serpapi",
+      "listed_price": "69.99",
+      "currency": "USD",
+      "price_status": "verified",
+      "condition": "New",
+      "condition_status": "verified"
+    },
+    {
+      "name": "Sony WF-C700N Earbud Replacement RIGHT Side Wireless WFC700N Ear Bud Black - New",
+      "product_url": "https://www.ebay.com/itm/fixture-sony-wf-c700n-right-replacement",
+      "source": "ebay",
+      "listed_price": "24.99",
+      "currency": "USD",
+      "price_status": "verified",
+      "condition": "New",
+      "condition_status": "verified"
+    },
+    {
+      "name": "Replacement ear tips for wireless earbuds silicone 3 sizes",
+      "product_url": "https://www.ebay.com/itm/fixture-ear-tips-accessory",
+      "source": "ebay",
+      "listed_price": "8.99",
+      "currency": "USD",
+      "price_status": "verified",
+      "condition": "New",
+      "condition_status": "verified"
+    }
+  ]
+}

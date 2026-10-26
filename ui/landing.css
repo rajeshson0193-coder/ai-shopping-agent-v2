@@ -1,0 +1,502 @@
+/* ShopBuddy home — mirrored from shopbuddy-discovery (React/Lovable index). */
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap");
+
+:root {
+  --radius: 0.875rem;
+  --background: oklch(0.982 0.008 85);
+  --foreground: oklch(0.24 0.012 250);
+  --card: oklch(0.995 0.004 85);
+  --primary: oklch(0.47 0.085 190);
+  --primary-foreground: oklch(0.985 0.006 85);
+  --secondary: oklch(0.955 0.012 85);
+  --secondary-foreground: oklch(0.3 0.012 250);
+  --muted-foreground: oklch(0.5 0.012 250);
+  --accent: oklch(0.94 0.035 170);
+  --accent-foreground: oklch(0.38 0.08 175);
+  --border: oklch(0.905 0.012 85);
+  --ring: oklch(0.55 0.09 185);
+  --shadow-card: 0 1px 2px oklch(0.3 0.02 85 / 6%), 0 8px 24px -12px oklch(0.3 0.02 85 / 14%);
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fraunces", Georgia, serif;
+}
+
+html,
+body,
+[data-testid="stAppViewContainer"],
+[data-testid="stAppViewContainer"] > .main,
+[data-testid="stMain"],
+section.main {
+  min-height: 100% !important;
+  /* Avoid locking overflow:hidden here — empty layout shells used to hide the UI. */
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+}
+
+.stApp,
+[data-testid="stAppViewContainer"] {
+  background: var(--background) !important;
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+[data-testid="stHeader"] {
+  background: transparent !important;
+  height: 0 !important;
+}
+
+#MainMenu,
+footer,
+[data-testid="stStatusWidget"],
+div[data-testid="stDecoration"],
+[data-testid="stToolbar"],
+[data-testid="stLogo"],
+header[data-testid="stHeader"] {
+  display: none !important;
+}
+
+/* Hide Streamlit top page nav chrome for a clean landing (Picks still reachable after run). */
+[data-testid="stSidebarCollapsedControl"],
+nav[data-testid="stSidebarNav"],
+[data-testid="stSidebarNavItems"] {
+  display: none !important;
+}
+
+[data-testid="stMainBlockContainer"] {
+  max-width: 100% !important;
+  padding: 0 !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+}
+
+[data-testid="stMainBlockContainer"] [data-testid="stVerticalBlock"] {
+  gap: 0 !important;
+}
+
+div[data-testid="stForm"] {
+  border: 1px solid var(--border) !important;
+  padding: 0.625rem !important;
+  background: var(--card) !important;
+  border-radius: 1rem !important;
+  box-shadow: var(--shadow-card) !important;
+  max-width: 48rem !important;
+  margin: 1.5rem auto 0 auto !important;
+  width: 100% !important;
+}
+
+/* --- Exact layout shell from shopbuddy-discovery index.tsx --- */
+
+.sb-page {
+  /* Kept for legacy class names; layout is driven by Streamlit main container. */
+  display: block;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.sb-header {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 72rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 2rem;
+  box-sizing: border-box;
+}
+
+.sb-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sb-brand-mark {
+  display: flex;
+  height: 2rem;
+  width: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.sb-brand-mark svg {
+  width: 1rem;
+  height: 1rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.sb-brand-name {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.sb-local-ai {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  color: var(--muted-foreground);
+}
+
+.sb-local-ai i {
+  display: inline-block;
+  height: 0.375rem;
+  width: 0.375rem;
+  border-radius: 999px;
+  background: var(--primary);
+}
+
+.sb-main {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 48rem;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  text-align: center;
+  box-sizing: border-box;
+  min-height: 0;
+}
+
+.sb-hero-block {
+  width: 100%;
+  max-width: 48rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.sb-hero-img {
+  display: block;
+  margin: 0 auto 0.75rem auto;
+  height: 10rem;
+  width: 20rem;
+  max-width: 100%;
+  border-radius: 1rem;
+  border: 1px solid var(--border);
+  object-fit: cover;
+  box-shadow: var(--shadow-card);
+}
+
+.sb-eyebrow {
+  margin: 0 0 0.55rem;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--primary);
+  text-align: center;
+}
+
+.sb-title {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: clamp(2.75rem, 6vw, 3.75rem);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+  color: var(--foreground);
+}
+
+.sb-title span {
+  color: var(--primary);
+}
+
+.sb-search-wrap {
+  margin: 1.5rem auto 0 auto;
+  width: 100%;
+  max-width: 48rem;
+}
+
+.sb-search-card {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 1rem;
+  border: 1px solid var(--border);
+  background: var(--card);
+  padding: 0.625rem;
+  box-shadow: var(--shadow-card);
+  box-sizing: border-box;
+}
+
+.sb-search-card:focus-within {
+  box-shadow: var(--shadow-card), 0 0 0 2px color-mix(in oklab, var(--ring) 40%, transparent);
+}
+
+.sb-search-icon {
+  margin-left: 1rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  flex-shrink: 0;
+  color: var(--muted-foreground);
+}
+
+.sb-search-icon svg {
+  width: 100%;
+  height: 100%;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Stretch Streamlit widgets inside the search card look */
+.sb-search-wrap [data-testid="stHorizontalBlock"] {
+  gap: 0.5rem !important;
+  align-items: center !important;
+}
+
+.sb-search-wrap div[data-testid="stTextInput"] {
+  flex: 1 1 auto;
+}
+
+.sb-search-wrap div[data-testid="stTextInput"] > div {
+  background: transparent !important;
+}
+
+.sb-search-wrap div[data-testid="stTextInput"] input {
+  height: 4rem !important;
+  min-height: 4rem !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  font-size: 1.25rem !important;
+  font-family: var(--font-sans) !important;
+  color: var(--foreground) !important;
+  padding-left: 0.25rem !important;
+}
+
+.sb-search-wrap div[data-testid="stTextInput"] input::placeholder {
+  color: var(--muted-foreground) !important;
+}
+
+.sb-search-wrap div[data-testid="stFormSubmitButton"] button,
+.sb-search-wrap div.stButton > button[kind="primary"],
+.sb-search-wrap button[data-testid="baseButton-primary"] {
+  height: 4rem !important;
+  min-height: 4rem !important;
+  border-radius: 0.75rem !important;
+  background: var(--primary) !important;
+  color: var(--primary-foreground) !important;
+  border: 0 !important;
+  font-size: 1.125rem !important;
+  font-weight: 600 !important;
+  padding-left: 2.25rem !important;
+  padding-right: 2.25rem !important;
+}
+
+/* Example chips row — keep pills compact and centered */
+div[class*="st-key-example_chips_row"] {
+  margin: 1rem auto 0 auto !important;
+  max-width: 48rem !important;
+  justify-content: center !important;
+}
+
+div[class*="st-key-example_chips_row"] div.stButton {
+  width: auto !important;
+  flex: 0 0 auto !important;
+}
+
+div[class*="st-key-example_chips_row"] div.stButton > button {
+  border-radius: 999px !important;
+  border: 1px solid var(--border) !important;
+  background: var(--secondary) !important;
+  color: var(--secondary-foreground) !important;
+  padding: 0.375rem 1rem !important;
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+  min-height: 0 !important;
+  height: auto !important;
+  width: auto !important;
+  white-space: nowrap !important;
+}
+
+div[class*="st-key-example_chips_row"] div.stButton > button:hover {
+  background: var(--accent) !important;
+  color: var(--accent-foreground) !important;
+}
+
+.sb-footer {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 64rem;
+  padding: 0 2rem 2.5rem;
+  box-sizing: border-box;
+}
+
+.sb-brands {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem 2.5rem;
+}
+
+.sb-brands img {
+  width: auto;
+  object-fit: contain;
+  opacity: 1;
+  filter: none;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.sb-brands img:hover {
+  transform: scale(1.06);
+}
+
+.sb-brands img.h7 {
+  height: 2.6rem;
+}
+.sb-brands img.h8 {
+  height: 2.85rem;
+}
+.sb-brands img.h9 {
+  height: 3rem;
+}
+.sb-brands img.h10 {
+  height: 3.1rem;
+}
+
+.sb-settings {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 48rem;
+  padding: 0 2rem 0.75rem;
+  box-sizing: border-box;
+}
+
+.sb-settings div[data-testid="stExpander"] {
+  border: 1px solid var(--border) !important;
+  border-radius: 0.75rem !important;
+  background: var(--card) !important;
+}
+
+body.sb-busy,
+body.sb-busy [data-testid="stAppViewContainer"],
+body.sb-busy [data-testid="stMain"],
+body.sb-busy section.main,
+body.sb-busy [data-testid="stMainBlockContainer"] {
+  max-height: none !important;
+  overflow: auto !important;
+}
+
+@media (max-width: 720px), (max-height: 640px) {
+  html,
+  body,
+  [data-testid="stAppViewContainer"],
+  [data-testid="stMain"],
+  section.main,
+  [data-testid="stMainBlockContainer"] {
+    max-height: none !important;
+    overflow: auto !important;
+  }
+  .sb-page {
+    height: auto;
+    max-height: none;
+    overflow: visible;
+  }
+  .sb-hero-img {
+    height: 8rem;
+    width: 16rem;
+  }
+  .sb-title {
+    font-size: 2.4rem;
+  }
+}
+
+
+/* Search-button progress — stays under the form, no scroll required */
+.sb-progress {
+  margin: 0.85rem auto 0 auto;
+  max-width: 48rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.85rem;
+  border: 1px solid var(--border);
+  background: var(--card);
+  box-shadow: var(--shadow-card);
+}
+
+.sb-spinner {
+  width: 1.35rem;
+  height: 1.35rem;
+  border-radius: 999px;
+  border: 2.5px solid color-mix(in oklab, var(--primary) 25%, transparent);
+  border-top-color: var(--primary);
+  animation: sb-spin 0.7s linear infinite;
+  flex: 0 0 auto;
+}
+
+.sb-progress-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.1rem;
+  text-align: left;
+}
+
+.sb-progress-copy strong {
+  font-size: 0.92rem;
+  color: var(--foreground);
+}
+
+.sb-progress-copy span {
+  font-size: 0.78rem;
+  color: var(--muted-foreground);
+}
+
+/* Turn the Search button into a spinner while research runs */
+body.sb-busy div[data-testid="stFormSubmitButton"] button {
+  position: relative !important;
+  color: transparent !important;
+  pointer-events: none !important;
+}
+
+body.sb-busy div[data-testid="stFormSubmitButton"] button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin: -0.625rem 0 0 -0.625rem;
+  border-radius: 999px;
+  border: 2.5px solid rgba(255, 255, 255, 0.35);
+  border-top-color: #fff;
+  animation: sb-spin 0.7s linear infinite;
+}
+
+@keyframes sb-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

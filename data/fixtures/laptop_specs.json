@@ -1,0 +1,232 @@
+{
+  "description": "Official-spec stand-ins used until live manufacturer retrieval is wired. Each record must include supporting text as if copied from a spec sheet.",
+  "specs": {
+    "Lenovo IdeaPad Slim 3": {
+      "cpu": {
+        "value": "Intel Core i5",
+        "status": "verified",
+        "source_url": "https://www.lenovo.com/us/en/p/laptops/ideapad/ideapad-slim-3",
+        "supporting_text": "Processor: Intel Core i5. Intel Core i5 processor."
+      },
+      "ram_gb": {
+        "value": "16",
+        "status": "verified",
+        "source_url": "https://www.lenovo.com/us/en/p/laptops/ideapad/ideapad-slim-3",
+        "supporting_text": "Memory: 16 GB RAM soldered. 16GB memory."
+      },
+      "storage": {
+        "value": "512GB SSD",
+        "status": "verified",
+        "source_url": "https://www.lenovo.com/us/en/p/laptops/ideapad/ideapad-slim-3",
+        "supporting_text": "Storage: 512 GB SSD. 512GB SSD storage."
+      },
+      "display": {
+        "value": "15.6-inch FHD",
+        "status": "verified",
+        "source_url": "https://www.lenovo.com/us/en/p/laptops/ideapad/ideapad-slim-3",
+        "supporting_text": "Display: 15.6-inch FHD (1920 x 1080) TN 250 nits anti-glare."
+      },
+      "gpu": {
+        "value": "Intel graphics",
+        "status": "verified",
+        "source_url": "https://www.lenovo.com/us/en/p/laptops/ideapad/ideapad-slim-3",
+        "supporting_text": "Graphics: Integrated Intel graphics."
+      }
+    },
+    "HP Pavilion 15": {
+      "cpu": {
+        "value": "AMD Ryzen 5",
+        "status": "verified",
+        "source_url": "https://www.hp.com/us-en/shop/mdp/laptops-tablets/pavilion-laptops",
+        "supporting_text": "Processor AMD Ryzen 5. Ryzen 5 laptop processor."
+      },
+      "ram_gb": {
+        "value": "8",
+        "status": "verified",
+        "source_url": "https://www.hp.com/us-en/shop/mdp/laptops-tablets/pavilion-laptops",
+        "supporting_text": "Memory 8 GB DDR4-3200 RAM."
+      },
+      "storage": {
+        "value": "512GB SSD",
+        "status": "verified",
+        "source_url": "https://www.hp.com/us-en/shop/mdp/laptops-tablets/pavilion-laptops",
+        "supporting_text": "Internal storage 512 GB PCIe NVMe SSD."
+      },
+      "display": {
+        "value": "15.6-inch FHD",
+        "status": "verified",
+        "source_url": "https://www.hp.com/us-en/shop/mdp/laptops-tablets/pavilion-laptops",
+        "supporting_text": "15.6-inch FHD (1920 x 1080) micro-edge display."
+      },
+      "gpu": {
+        "value": null,
+        "status": "unknown",
+        "source_url": "https://www.hp.com/us-en/shop/mdp/laptops-tablets/pavilion-laptops",
+        "supporting_text": null,
+        "reason": "No discrete GPU claim in the retrieved manufacturer text"
+      }
+    },
+    "Dell Inspiron 15": {
+      "cpu": {
+        "value": "Intel Core i3",
+        "status": "verified",
+        "source_url": "https://www.dell.com/en-us/shop/dell-laptops/inspiron-15-laptop/spd/inspiron-15-3530-laptop",
+        "supporting_text": "Processor Intel Core i3. 13th Gen Intel Core i3."
+      },
+      "ram_gb": {
+        "value": "8",
+        "status": "verified",
+        "source_url": "https://www.dell.com/en-us/shop/dell-laptops/inspiron-15-3530-laptop/spd/inspiron-15-3530-laptop",
+        "supporting_text": "Memory 8 GB, 1 x 8 GB, DDR4, 2666 MT/s."
+      },
+      "storage": {
+        "value": "256GB SSD",
+        "status": "verified",
+        "source_url": "https://www.dell.com/en-us/shop/dell-laptops/inspiron-15-3530-laptop/spd/inspiron-15-3530-laptop",
+        "supporting_text": "Storage 256 GB, M.2, PCIe NVMe, SSD."
+      },
+      "display": {
+        "value": "15.6-inch FHD",
+        "status": "unknown",
+        "source_url": "https://www.dell.com/en-us/shop/dell-laptops/inspiron-15-3530-laptop/spd/inspiron-15-3530-laptop",
+        "supporting_text": "Skip to content Menu Laptops For Home Related products You may also like",
+        "reason": "Retrieved text is page chrome, not a display specification"
+      },
+      "gpu": {
+        "value": null,
+        "status": "unknown",
+        "source_url": "https://www.dell.com/en-us/shop/dell-laptops/inspiron-15-3530-laptop/spd/inspiron-15-3530-laptop",
+        "supporting_text": null
+      }
+    },
+    "Acer Aspire 5": {
+      "cpu": {
+        "value": "Intel Core i5",
+        "status": "verified",
+        "source_url": "https://www.acer.com/us-en/laptops/aspire/aspire-5",
+        "supporting_text": "Intel Core i5 processor. Aspire 5 Intel Core i5."
+      },
+      "ram_gb": {
+        "value": "16",
+        "status": "verified",
+        "source_url": "https://www.acer.com/us-en/laptops/aspire/aspire-5",
+        "supporting_text": "16 GB DDR4 memory. 16GB RAM."
+      },
+      "storage": {
+        "value": "1TB SSD",
+        "status": "verified",
+        "source_url": "https://www.acer.com/us-en/laptops/aspire/aspire-5",
+        "supporting_text": "1 TB PCIe NVMe SSD. 1TB SSD storage."
+      },
+      "display": {
+        "value": "15.6-inch FHD",
+        "status": "verified",
+        "source_url": "https://www.acer.com/us-en/laptops/aspire/aspire-5",
+        "supporting_text": "15.6-inch Full HD IPS display 1920 x 1080."
+      },
+      "gpu": {
+        "value": "Intel graphics",
+        "status": "verified",
+        "source_url": "https://www.acer.com/us-en/laptops/aspire/aspire-5",
+        "supporting_text": "Intel Graphics. Integrated graphics."
+      }
+    },
+    "ASUS VivoBook 15": {
+      "cpu": {
+        "value": "Intel Core i5",
+        "status": "verified",
+        "source_url": "https://www.asus.com/us/laptops/for-home/all-series/vivobook-15/",
+        "supporting_text": "Intel Core i5 processor. VivoBook 15 Intel Core i5."
+      },
+      "ram_gb": {
+        "value": "16",
+        "status": "verified",
+        "source_url": "https://www.asus.com/us/laptops/for-home/all-series/vivobook-15/",
+        "supporting_text": "16 GB RAM. 16GB memory."
+      },
+      "storage": {
+        "value": "512GB SSD",
+        "status": "verified",
+        "source_url": "https://www.asus.com/us/laptops/for-home/all-series/vivobook-15/",
+        "supporting_text": "512 GB SSD. 512GB SSD storage."
+      },
+      "display": {
+        "value": "15.6-inch FHD",
+        "status": "verified",
+        "source_url": "https://www.asus.com/us/laptops/for-home/all-series/vivobook-15/",
+        "supporting_text": "15.6-inch FHD (1920 x 1080) display."
+      },
+      "gpu": {
+        "value": null,
+        "status": "unknown",
+        "source_url": "https://www.asus.com/us/laptops/for-home/all-series/vivobook-15/",
+        "supporting_text": null
+      }
+    },
+    "ASUS TUF Gaming A15": {
+      "cpu": {
+        "value": "AMD Ryzen 7",
+        "status": "verified",
+        "source_url": "https://www.asus.com/us/laptops/for-gaming/tuf-gaming/asus-tuf-gaming-a15/",
+        "supporting_text": "AMD Ryzen 7 processor. TUF Gaming A15 Ryzen 7."
+      },
+      "ram_gb": {
+        "value": "16",
+        "status": "verified",
+        "source_url": "https://www.asus.com/us/laptops/for-gaming/tuf-gaming/asus-tuf-gaming-a15/",
+        "supporting_text": "16 GB DDR5 RAM. 16GB memory."
+      },
+      "storage": {
+        "value": "512GB SSD",
+        "status": "verified",
+        "source_url": "https://www.asus.com/us/laptops/for-gaming/tuf-gaming/asus-tuf-gaming-a15/",
+        "supporting_text": "512 GB PCIe 4.0 SSD."
+      },
+      "display": {
+        "value": "15.6-inch FHD 144Hz",
+        "status": "verified",
+        "source_url": "https://www.asus.com/us/laptops/for-gaming/tuf-gaming/asus-tuf-gaming-a15/",
+        "supporting_text": "15.6-inch FHD 144Hz display."
+      },
+      "gpu": {
+        "value": "NVIDIA RTX 2050",
+        "status": "verified",
+        "source_url": "https://www.asus.com/us/laptops/for-gaming/tuf-gaming/asus-tuf-gaming-a15/",
+        "supporting_text": "NVIDIA GeForce RTX 2050 Laptop GPU."
+      }
+    },
+    "Samsung Galaxy Book4": {
+      "cpu": {
+        "value": "Intel Core 7",
+        "status": "verified",
+        "source_url": "https://www.samsung.com/us/computing/galaxy-books/galaxy-book4/",
+        "supporting_text": "Intel Core 7 processor. Galaxy Book4 Intel Core 7."
+      },
+      "ram_gb": {
+        "value": "16",
+        "status": "verified",
+        "source_url": "https://www.samsung.com/us/computing/galaxy-books/galaxy-book4/",
+        "supporting_text": "16 GB RAM. 16GB LPDDR5X."
+      },
+      "storage": {
+        "value": "512GB SSD",
+        "status": "verified",
+        "source_url": "https://www.samsung.com/us/computing/galaxy-books/galaxy-book4/",
+        "supporting_text": "512 GB SSD. 512GB storage."
+      },
+      "display": {
+        "value": "15.6-inch FHD",
+        "status": "verified",
+        "source_url": "https://www.samsung.com/us/computing/galaxy-books/galaxy-book4/",
+        "supporting_text": "Galaxy Book4 | Laptops | Samsung US Skip to content Menu Related products You may also like",
+        "reason": "Supporting text is navigation chrome, not a display specification"
+      },
+      "gpu": {
+        "value": "Intel graphics",
+        "status": "verified",
+        "source_url": "https://www.samsung.com/us/computing/galaxy-books/galaxy-book4/",
+        "supporting_text": "Intel Graphics. Integrated GPU."
+      }
+    }
+  }
+}

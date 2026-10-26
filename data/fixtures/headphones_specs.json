@@ -1,0 +1,275 @@
+{
+  "description": "Manufacturer-style headphone spec fixtures for offline pipeline runs.",
+  "specs": {
+    "Soundcore Q20i": {
+      "headphone_type": {
+        "status": "verified",
+        "value": "over-ear headphones",
+        "source_url": "https://www.soundcore.com/products/q20i-a3004z31",
+        "supporting_text": "Soundcore Q20i Hybrid Active Noise Cancelling Headphones over-ear design",
+        "reason": "explicit product-type wording"
+      },
+      "anc_support": {
+        "status": "verified",
+        "value": "supported",
+        "source_url": "https://www.soundcore.com/products/q20i-a3004z31",
+        "supporting_text": "Hybrid Active Noise Cancelling reduces low-frequency noise",
+        "reason": "explicit ANC wording"
+      },
+      "battery_life": {
+        "status": "verified",
+        "value": "40 hours",
+        "source_url": "https://www.soundcore.com/products/q20i-a3004z31",
+        "supporting_text": "Up to 40 hours of playtime with ANC on",
+        "reason": "explicit battery/playtime wording"
+      },
+      "charging_port": {
+        "status": "verified",
+        "value": "USB-C",
+        "source_url": "https://www.soundcore.com/products/q20i-a3004z31",
+        "supporting_text": "USB-C charging port for faster recharging",
+        "reason": "explicit charging-port wording"
+      }
+    },
+    "Sony WH-CH520": {
+      "headphone_type": {
+        "status": "verified",
+        "value": "on-ear headphones",
+        "source_url": "https://www.sony.com/electronics/support/wireless-headphones-bluetooth-headphones/wh-ch520/specifications",
+        "supporting_text": "WH-CH520 wireless on-ear headphones",
+        "reason": "explicit product-type wording"
+      },
+      "anc_support": {
+        "status": "unknown",
+        "value": null,
+        "source_url": "https://www.sony.com/electronics/support/wireless-headphones-bluetooth-headphones/wh-ch520/specifications",
+        "supporting_text": null,
+        "reason": "No explicit ANC support wording found"
+      },
+      "battery_life": {
+        "status": "verified",
+        "value": "50 hours",
+        "source_url": "https://www.sony.com/electronics/support/wireless-headphones-bluetooth-headphones/wh-ch520/specifications",
+        "supporting_text": "Battery life up to 50 hours of playback time",
+        "reason": "explicit battery/playtime wording"
+      },
+      "charging_port": {
+        "status": "verified",
+        "value": "USB-C",
+        "source_url": "https://www.sony.com/electronics/support/wireless-headphones-bluetooth-headphones/wh-ch520/specifications",
+        "supporting_text": "USB Type-C charging port",
+        "reason": "explicit charging-port wording"
+      }
+    },
+    "JBL Vibe Beam 2": {
+      "headphone_type": {
+        "status": "verified",
+        "value": "true wireless earbuds",
+        "source_url": "https://www.jbl.com/JBLVBEAM2BLKAM.html",
+        "supporting_text": "JBL Vibe Beam 2 true wireless earbuds",
+        "reason": "explicit product-type wording"
+      },
+      "anc_support": {
+        "status": "verified",
+        "value": "supported",
+        "source_url": "https://www.jbl.com/JBLVBEAM2BLKAM.html",
+        "supporting_text": "Active Noise Cancelling for focused listening",
+        "reason": "explicit ANC wording"
+      },
+      "battery_life": {
+        "status": "verified",
+        "value": "32 hours",
+        "source_url": "https://www.jbl.com/JBLVBEAM2BLKAM.html",
+        "supporting_text": "Up to 32 hours total playtime with charging case",
+        "reason": "explicit battery/playtime wording"
+      },
+      "charging_port": {
+        "status": "verified",
+        "value": "USB-C",
+        "source_url": "https://www.jbl.com/JBLVBEAM2BLKAM.html",
+        "supporting_text": "USB-C charging port on the case",
+        "reason": "explicit charging-port wording"
+      }
+    },
+    "JLab Studio 2": {
+      "headphone_type": {
+        "status": "verified",
+        "value": "on-ear headphones",
+        "source_url": "https://help.jlab.com/pages/studio-2-wireless-on-ear-headphones-product-support-page",
+        "supporting_text": "Studio 2 wireless on-ear headphones",
+        "reason": "explicit product-type wording"
+      },
+      "anc_support": {
+        "status": "unknown",
+        "value": null,
+        "source_url": "https://help.jlab.com/pages/studio-2-wireless-on-ear-headphones-product-support-page",
+        "supporting_text": null,
+        "reason": "No explicit ANC support wording found"
+      },
+      "battery_life": {
+        "status": "verified",
+        "value": "50 hours",
+        "source_url": "https://help.jlab.com/pages/studio-2-wireless-on-ear-headphones-product-support-page",
+        "supporting_text": "50+ hour Bluetooth playtime battery life",
+        "reason": "explicit battery/playtime wording"
+      },
+      "charging_port": {
+        "status": "verified",
+        "value": "USB-C",
+        "source_url": "https://help.jlab.com/pages/studio-2-wireless-on-ear-headphones-product-support-page",
+        "supporting_text": "USB-C charging port",
+        "reason": "explicit charging-port wording"
+      }
+    },
+    "Skullcandy SESH ANC": {
+      "headphone_type": {
+        "status": "verified",
+        "value": "true wireless earbuds",
+        "source_url": "https://www.skullcandy.com/blogs/product-help/sesh-anc",
+        "supporting_text": "SESH ANC true wireless earbuds",
+        "reason": "explicit product-type wording"
+      },
+      "anc_support": {
+        "status": "verified",
+        "value": "supported",
+        "source_url": "https://www.skullcandy.com/blogs/product-help/sesh-anc",
+        "supporting_text": "Active Noise Cancelling blocks distractions",
+        "reason": "explicit ANC wording"
+      },
+      "battery_life": {
+        "status": "verified",
+        "value": "20 hours",
+        "source_url": "https://www.skullcandy.com/blogs/product-help/sesh-anc",
+        "supporting_text": "Up to 20 hours total battery life with case",
+        "reason": "explicit battery/playtime wording"
+      },
+      "charging_port": {
+        "status": "verified",
+        "value": "USB-C",
+        "source_url": "https://www.skullcandy.com/blogs/product-help/sesh-anc",
+        "supporting_text": "USB-C charging port",
+        "reason": "explicit charging-port wording"
+      }
+    },
+    "Soundcore P30i": {
+      "headphone_type": {
+        "status": "verified",
+        "value": "true wireless earbuds",
+        "source_url": "https://www.soundcore.com/products/soundcore-p30i",
+        "supporting_text": "Soundcore P30i true wireless earbuds",
+        "reason": "explicit product-type wording"
+      },
+      "anc_support": {
+        "status": "verified",
+        "value": "supported",
+        "source_url": "https://www.soundcore.com/products/soundcore-p30i",
+        "supporting_text": "Active Noise Cancelling reduces distractions",
+        "reason": "explicit ANC wording"
+      },
+      "battery_life": {
+        "status": "verified",
+        "value": "45 hours",
+        "source_url": "https://www.soundcore.com/products/soundcore-p30i",
+        "supporting_text": "Up to 45 hours total playtime with charging case",
+        "reason": "explicit battery/playtime wording"
+      },
+      "charging_port": {
+        "status": "verified",
+        "value": "USB-C",
+        "source_url": "https://www.soundcore.com/products/soundcore-p30i",
+        "supporting_text": "USB-C charging port on the case",
+        "reason": "explicit charging-port wording"
+      }
+    },
+    "Sony WF-C700N": {
+      "headphone_type": {
+        "status": "verified",
+        "value": "true wireless earbuds",
+        "source_url": "https://www.sony.com/electronics/support/wireless-headphones-bluetooth-headphones/wf-c700n/specifications",
+        "supporting_text": "WF-C700N truly wireless noise cancelling earbuds",
+        "reason": "explicit product-type wording"
+      },
+      "anc_support": {
+        "status": "verified",
+        "value": "supported",
+        "source_url": "https://www.sony.com/electronics/support/wireless-headphones-bluetooth-headphones/wf-c700n/specifications",
+        "supporting_text": "Noise Cancelling for focused listening",
+        "reason": "explicit ANC wording"
+      },
+      "battery_life": {
+        "status": "verified",
+        "value": "15 hours",
+        "source_url": "https://www.sony.com/electronics/support/wireless-headphones-bluetooth-headphones/wf-c700n/specifications",
+        "supporting_text": "Up to 15 hours battery life with case",
+        "reason": "explicit battery/playtime wording"
+      },
+      "charging_port": {
+        "status": "verified",
+        "value": "USB-C",
+        "source_url": "https://www.sony.com/electronics/support/wireless-headphones-bluetooth-headphones/wf-c700n/specifications",
+        "supporting_text": "USB Type-C charging port",
+        "reason": "explicit charging-port wording"
+      }
+    },
+    "Samsung Galaxy Buds FE": {
+      "headphone_type": {
+        "status": "verified",
+        "value": "true wireless earbuds",
+        "source_url": "https://www.samsung.com/us/support/owners/product/galaxy-buds-fe/",
+        "supporting_text": "Galaxy Buds FE true wireless earbuds",
+        "reason": "explicit product-type wording"
+      },
+      "anc_support": {
+        "status": "verified",
+        "value": "supported",
+        "source_url": "https://www.samsung.com/us/support/owners/product/galaxy-buds-fe/",
+        "supporting_text": "Active Noise Cancellation keeps distractions out",
+        "reason": "explicit ANC wording"
+      },
+      "battery_life": {
+        "status": "verified",
+        "value": "30 hours",
+        "source_url": "https://www.samsung.com/us/support/owners/product/galaxy-buds-fe/",
+        "supporting_text": "Up to 30 hours total playtime with charging case",
+        "reason": "explicit battery/playtime wording"
+      },
+      "charging_port": {
+        "status": "verified",
+        "value": "USB-C",
+        "source_url": "https://www.samsung.com/us/support/owners/product/galaxy-buds-fe/",
+        "supporting_text": "USB-C charging port",
+        "reason": "explicit charging-port wording"
+      }
+    },
+    "TREBLAB Z2": {
+      "headphone_type": {
+        "status": "verified",
+        "value": "over-ear headphones",
+        "source_url": "https://treblab.com/products/treblab-z2",
+        "supporting_text": "TREBLAB Z2 over-ear wireless headphones",
+        "reason": "explicit product-type wording"
+      },
+      "anc_support": {
+        "status": "unknown",
+        "value": null,
+        "source_url": "https://treblab.com/products/treblab-z2",
+        "supporting_text": null,
+        "reason": "No explicit ANC support wording found"
+      },
+      "battery_life": {
+        "status": "verified",
+        "value": "35 hours",
+        "source_url": "https://treblab.com/products/treblab-z2",
+        "supporting_text": "Up to 35 hours of playtime battery life",
+        "reason": "explicit battery/playtime wording"
+      },
+      "charging_port": {
+        "status": "verified",
+        "value": "USB-C",
+        "source_url": "https://treblab.com/products/treblab-z2",
+        "supporting_text": "USB-C charging port",
+        "reason": "explicit charging-port wording"
+      }
+    }
+  }
+}

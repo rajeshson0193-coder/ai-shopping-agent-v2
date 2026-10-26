@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="ShopBuddy">
+  <rect width="64" height="64" rx="16" fill="#0B7A75"/>
+  <path fill="#E8F6F3" d="M20 22h24l-2.2 24.5a4 4 0 0 1-4 3.5H26.2a4 4 0 0 1-4-3.5L20 22z"/>
+  <path fill="none" stroke="#E8F6F3" stroke-width="3" stroke-linecap="round" d="M26 22v-3.5a6 6 0 0 1 12 0V22"/>
+  <path fill="#10221F" d="M31 34h2v8h-2zm-3 3h8v2h-8z"/>
+</svg>

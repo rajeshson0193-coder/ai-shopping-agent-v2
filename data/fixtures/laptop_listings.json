@@ -1,0 +1,105 @@
+{
+  "description": "Deterministic discovery fixtures. These are representative US listings for pipeline development, not a live market snapshot.",
+  "listings": [
+    {
+      "name": "Lenovo IdeaPad Slim 3 15.6 Laptop, Intel Core i5, 16GB RAM, 512GB SSD, Windows 11",
+      "product_url": "https://www.ebay.com/itm/fixture-ideapad-slim-3",
+      "source": "ebay",
+      "listed_price": "649.00",
+      "currency": "USD",
+      "price_status": "verified",
+      "condition": "new",
+      "condition_status": "verified"
+    },
+    {
+      "name": "HP Pavilion 15 Laptop AMD Ryzen 5 8GB RAM 512GB SSD",
+      "product_url": "https://www.bestbuy.com/site/fixture-hp-pavilion-15",
+      "source": "bestbuy",
+      "listed_price": "549.99",
+      "currency": "USD",
+      "price_status": "verified",
+      "condition": "new",
+      "condition_status": "verified"
+    },
+    {
+      "name": "Dell Inspiron 15 3000 Laptop Intel i3 8GB RAM 256GB SSD",
+      "product_url": "https://www.walmart.com/ip/fixture-dell-inspiron-15",
+      "source": "serpapi",
+      "listed_price": "429.00",
+      "currency": "USD",
+      "price_status": "unknown",
+      "condition": "new",
+      "condition_status": "unknown"
+    },
+    {
+      "name": "Acer Aspire 5 A515 Laptop Intel Core i5 16GB RAM 1TB SSD",
+      "product_url": "https://www.ebay.com/itm/fixture-acer-aspire-5",
+      "source": "ebay",
+      "listed_price": "599.99",
+      "currency": "USD",
+      "price_status": "verified",
+      "condition": "new",
+      "condition_status": "verified"
+    },
+    {
+      "name": "ASUS VivoBook 15 Laptop Intel i5 16GB RAM 512GB SSD Windows 11",
+      "product_url": "https://www.ebay.com/itm/fixture-asus-vivobook-15",
+      "source": "ebay",
+      "listed_price": "579.00",
+      "currency": "USD",
+      "price_status": "verified",
+      "condition": "refurbished",
+      "condition_status": "verified"
+    },
+    {
+      "name": "ASUS TUF Gaming A15 Laptop Ryzen 7 RTX 2050 16GB RAM 512GB SSD",
+      "product_url": "https://www.bestbuy.com/site/fixture-asus-tuf-a15",
+      "source": "serpapi",
+      "listed_price": "799.99",
+      "currency": "USD",
+      "price_status": "unknown",
+      "condition": "new",
+      "condition_status": "unknown"
+    },
+    {
+      "name": "Samsung Galaxy Book4 15.6 Laptop Intel Core 7 16GB RAM 512GB SSD",
+      "product_url": "https://www.ebay.com/itm/fixture-galaxy-book4",
+      "source": "ebay",
+      "listed_price": "899.00",
+      "currency": "USD",
+      "price_status": "verified",
+      "condition": "new",
+      "condition_status": "verified"
+    },
+    {
+      "name": "Apple MacBook Air 13 M3 16GB RAM 256GB SSD",
+      "product_url": "https://www.apple.com/shop/buy-mac/macbook-air/13-inch",
+      "source": "serpapi",
+      "listed_price": "1099.00",
+      "currency": "USD",
+      "price_status": "unknown",
+      "condition": "new",
+      "condition_status": "unknown"
+    },
+    {
+      "name": "Lenovo IdeaPad Slim 3 15.6 Laptop, Intel Core i5, 16GB RAM, 512GB SSD",
+      "product_url": "https://www.walmart.com/ip/fixture-ideapad-slim-3-duplicate",
+      "source": "serpapi",
+      "listed_price": "679.00",
+      "currency": "USD",
+      "price_status": "unknown",
+      "condition": "new",
+      "condition_status": "unknown"
+    },
+    {
+      "name": "Laptop sleeve 15.6 inch padded bag for IdeaPad and Pavilion",
+      "product_url": "https://www.ebay.com/itm/fixture-laptop-sleeve",
+      "source": "ebay",
+      "listed_price": "18.99",
+      "currency": "USD",
+      "price_status": "verified",
+      "condition": "new",
+      "condition_status": "verified"
+    }
+  ]
+}

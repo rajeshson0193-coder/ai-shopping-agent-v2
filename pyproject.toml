@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-shopping-agent"
+version = "0.1.0"
+description = "Local-first shopping research agent (Python pipeline v0.1)"
+requires-python = ">=3.11"
+readme = "README.md"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+markers = [
+    "live: opt-in network smoke tests (enable with pytest -m live or SHOPBUDDY_LIVE=1)",
+]
