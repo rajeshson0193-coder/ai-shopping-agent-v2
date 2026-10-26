@@ -1,7 +1,6 @@
 # AI Shopping Research Agent (v0.1)
 
-Local-first US shopping research agent. **Python owns ranking.** Local Ollama (default `qwen3:4b-instruct`) only explains the ranked report for the UI — soft-skips if Ollama is offline.
-
+Local-first US shopping research agent. **Python owns ranking.** Local Ollama (default `qwen3:4b-instruct`)  explains the ranked report for the UI.
 Category profiles (plug-in): **laptop**, **headphones**.
 
 Proving queries:
